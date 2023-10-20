@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Calculator</title>
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+   </head>
+
+   <body>
+      <div class="calculator mx-auto mt-12 max-w-sm p-4 bg-gray-200 rounded-lg">
+         <div id="display" class="text-3xl text-right p-2 pr-4">0</div>
+         <div class="grid grid-cols-4 gap-1 p-4">
+            <button id="clear" class="bg-red-600 text-white" onclick="handleClear()">AC</button>
+            <button id="divide" class="bg-yellow-400" onclick="handleOperator('/')">/</button>
+            <button id="multiply" class="bg-yellow-400" onclick="handleOperator('*')">x</button>
+            <button id="seven" onclick="handleNumber(7)">7</button>
+            <button id="eight" onclick="handleNumber(8)">8</button>
+            <button id="nine" onclick="handleNumber(9)">9</button>
+            <button id="subtract" class="bg-yellow-400" onclick="handleOperator('-')">-</button>
+            <button id="four" onclick="handleNumber(4)">4</button>
+            <button id="five" onclick="handleNumber(5)">5</button>
+            <button id="six" onclick="handleNumber(6)">6</button>
+            <button id="add" class="bg-yellow-400" onclick="handleOperator('+')">+</button>
+            <button id="one" onclick="handleNumber(1)">1</button>
+            <button id="two" onclick="handleNumber(2)">2</button>
+            <button id="three" onclick="handleNumber(3)">3</button>
+            <button id="equals" class="bg-green-500 text-white" onclick="handleEquals()">=</button>
+            <button id="zero" onclick="handleNumber(0)">0</button>
+            <button id="decimal" onclick="handleDecimal()">.</button>
+         </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="app.js"></script>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+   </body>
+
+</html>
