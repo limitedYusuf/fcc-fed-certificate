@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pomodoro Clock</title>
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+   </head>
+
+   <body class="bg-gray-100">
+      <div class="container mx-auto mt-8 text-center">
+         <h1 class="text-3xl">Pomodoro Clock</h1>
+         <div class="mt-4">
+            <div>
+               <label id="break-label" class="block text-gray-600">Break Length</label>
+               <div class="flex items-center justify-center space-x-4">
+                  <button id="break-decrement" class="text-xl text-gray-600">-</button>
+                  <span id="break-length" class="text-2xl">5</span>
+                  <button id="break-increment" class="text-xl text-gray-600">+</button>
+               </div>
+            </div>
+            <div class="mt-4">
+               <label id="session-label" class="block text-gray-600">Session Length</label>
+               <div class="flex items-center justify-center space-x-4">
+                  <button id="session-decrement" class="text-xl text-gray-600">-</button>
+                  <span id="session-length" class="text-2xl">25</span>
+                  <button id="session-increment" class="text-xl text-gray-600">+</button>
+               </div>
+            </div>
+            <div class="mt-8">
+               <label id="timer-label" class="block text-2xl font-bold text-gray-800">Session</label>
+               <div class="mt-2">
+                  <span id="time-left" class="text-5xl font-bold text-blue-600">25:00</span>
+               </div>
+               <div class="mt-4">
+                  <button id="start_stop"
+                     class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">Start</button>
+                  <button id="reset"
+                     class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 ml-2">Reset</button>
+               </div>
+            </div>
+            <audio id="beep"
+               src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"></audio>
+         </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="app.js"></script>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+   </body>
+
+</html>
